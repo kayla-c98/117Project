@@ -1,0 +1,60 @@
+body,html{
+	background-color: #1D1D1D !important;
+	height: 1000px;
+}
+.logo {
+	height: 50px;
+	width: 50px;
+}
+.logo-text{
+	height: 40px;
+	width: 75px;
+}
+nav{
+	padding: 10px 100px 0px 100px !important;
+}
+nav .navbar-nav li a{
+	color: white !important;
+	font-family: 'Open Sans';
+	font-size: 15px;
+ }
+ li{
+ 	padding: 20px !important;
+ }
+ .trial-button{
+ 	font-family: 'Open Sans';
+ 	font-size: 17px !important;
+  	background-image: linear-gradient(to right, #59ff90, #11ffeb, #2e62ff, #9819ff);;
+ 	padding: 20px;
+ 	border-radius: 30px;
+ }
+ .whatis-button{
+ 	font-family: 'Open Sans';
+ 	font-size: 17px !important;
+  	background-color: #c83dff;
+  	color: white;
+ 	padding: 10px 25px;
+ 	margin-left: 100px;
+ 	border-radius: 30px;
+ 	text-decoration: none !important;
+ }
+ .whatis-button:hover{
+ 	color: white;
+ }
+ hr{
+ 	margin-top: 0px !important;
+ 	width: 90%;
+ 	background-color: #4f4d4c !important;
+ }
+ h5{
+ 	color: #e6e1dc !important;
+ 	margin-left: 100px;
+ 	font-family: 'Open Sans' !important;
+ }
+ .stage{
+ 	padding-top: 50px;
+ 	margin-left: 150px;
+ 	width: 1150px;
+ 	height: 400px;
+ 	display: block !important;
+ }
