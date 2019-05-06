@@ -1,6 +1,14 @@
 body,html{
-	background-color: #1D1D1D !important;
-	height: 1000px;
+	background: #171717 !important;
+	
+	/*
+	animation-name: fade-bg;
+  	animation-duration: 2s;
+  	*/
+}
+@keyframes fade-bg{
+	from {background-color: #171717 !important}
+	to {background-color: black;}
 }
 .logo {
 	height: 50px;
@@ -10,8 +18,11 @@ body,html{
 	height: 40px;
 	width: 75px;
 }
+a{
+	text-decoration: none !important;
+}
 nav{
-	padding: 10px 100px 0px 100px !important;
+	padding: 10px 30px 0px 30px !important;
 }
 nav .navbar-nav li a{
 	color: white !important;
@@ -19,14 +30,20 @@ nav .navbar-nav li a{
 	font-size: 15px;
  }
  li{
- 	padding: 20px !important;
+ 	padding-left: 20px !important;
  }
- .trial-button{
+ .trial-button, .login-button{
  	font-family: 'Open Sans';
  	font-size: 17px !important;
-  	background-image: linear-gradient(to right, #59ff90, #11ffeb, #2e62ff, #9819ff);;
  	padding: 20px;
  	border-radius: 30px;
+ }
+ .trial-button{
+ 	background-image: linear-gradient(to right, #1fffb1 , #44ffef,#1d70ff,#893aff);
+  	/*background-color: #038EE5;*/
+ }
+  .login-button{
+  	background-color: #7D06E3;
  }
  .whatis-button{
  	font-family: 'Open Sans';
@@ -43,18 +60,109 @@ nav .navbar-nav li a{
  }
  hr{
  	margin-top: 0px !important;
- 	width: 90%;
+ 	margin-bottom: 5px !important;
  	background-color: #4f4d4c !important;
  }
  h5{
- 	color: #e6e1dc !important;
- 	margin-left: 100px;
+ 	margin-top: 40px !important;
+ 	margin-bottom: 20px !important;
+ 	color: #9D9D9D !important;
  	font-family: 'Open Sans' !important;
+ 	font-size: 15px !important;
  }
- .stage{
- 	padding-top: 50px;
- 	margin-left: 150px;
- 	width: 1150px;
- 	height: 400px;
- 	display: block !important;
+ .musician{	 	
+ 	width: 350px;
+ 	height: 350px;
  }
+ div.div-header{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align: center !important;
+ }
+ div.genres{
+ 	transition: background 0.2s linear;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	text-align: center;
+ 	margin-bottom: 30px !important;
+ }
+.strings{
+	position: absolute;
+	height: 52px;
+	max-width: 100%;
+	margin-top: 10px;
+}
+ h1{
+ 	font-size: 60px !important;
+ 	font-family: 'Archivo Black' !important;
+ }
+ #ac1, #ac2, #ac3{
+
+ 		padding: 20px;
+ 	padding-top: 0px !important;
+ 	padding-bottom: 0px !important;
+ }
+
+ #ac1{
+ 	 
+ 	color: #171717;
+ 	text-shadow: 0 0 2px #D64141 !important;
+ }
+ #ac2{
+ 	color: #171717;
+ 	text-shadow: 0 0 2px #86FFC3 !important;
+ }
+  #ac3{
+ 	color: #171717;
+ 	text-shadow: 0 0 2px #8BA6FF !important;
+ }
+ #g1, #g2, #g3, #g4, #g5, #g6{
+ 	transition: color 0.2s linear;
+ 	margin: 0px !important;
+  	padding: 0px !important;
+ 	color: #171717;
+ 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+ 	/*text-shadow: 0 0 2px #FFFFFF !important;*/
+ }
+ #g6{
+ 	margin-bottom: 20px !important;
+ }
+ .browse-all-btn,  .learn-more-btn{
+ 	font-family: 'Open Sans';
+ 	font-size: 17px;
+	border-radius: 30px;
+	padding: 7px;
+	padding-right: 32px;
+	padding-left: 32px;
+	text-decoration: none !important;
+ }
+.browse-all-btn{
+	background-color: #7D06E3;
+ 	color: white !important;
+ }
+ .learn-more-btn{
+	background-color: #212121;
+ 	color: #BCBCBC !important;
+ }
+ .instrument{
+ 	position: absolute;
+ 	right: 0px;
+ 	bottom: 0px;
+ 	max-width: 100%;
+ 	min-height: 100%;
+ }
+ /*
+.genres h1:hover{
+ 	color: white !important;
+ 	text-shadow: 0 0 3px white !important;
+ 	
+ }*/
+
+
+
+
+
+
+
+
