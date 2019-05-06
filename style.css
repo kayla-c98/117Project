@@ -107,15 +107,15 @@ nav .navbar-nav li a{
  #ac1{
  	 
  	color: #171717;
- 	text-shadow: 0 0 2px #D64141 !important;
+ 	text-shadow: -1px 0 #D64141, 0 1px #D64141, 1px 0 #D64141, 0 -1px #D64141;
  }
  #ac2{
  	color: #171717;
- 	text-shadow: 0 0 2px #86FFC3 !important;
+ 	text-shadow: -1px 0 #86FFC3, 0 1px #86FFC3, 1px 0 #86FFC3, 0 -1px #86FFC3;
  }
   #ac3{
  	color: #171717;
- 	text-shadow: 0 0 2px #8BA6FF !important;
+ 	text-shadow: -1px 0 #8BA6FF, 0 1px #8BA6FF, 1px 0 #8BA6FF, 0 -1px #8BA6FF;
  }
  #g1, #g2, #g3, #g4, #g5, #g6{
  	transition: color 0.2s linear;
@@ -158,6 +158,7 @@ nav .navbar-nav li a{
  	text-shadow: 0 0 3px white !important;
  	
  }*/
+
 
 
 
