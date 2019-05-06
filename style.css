@@ -1,10 +1,5 @@
 body,html{
 	background: #171717 !important;
-	
-	/*
-	animation-name: fade-bg;
-  	animation-duration: 2s;
-  	*/
 }
 @keyframes fade-bg{
 	from {background-color: #171717 !important}
