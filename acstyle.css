@@ -76,6 +76,7 @@ nav .navbar-nav li a{
  	text-align: center !important;
  }
  div.genres{
+	padding-bottom: 100px !important;
  	transition: background 0.2s linear;
  	background-repeat: no-repeat;
  	background-size: cover;
