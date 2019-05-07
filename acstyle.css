@@ -1,10 +1,6 @@
 body,html{
 	background: #171717 !important;
 }
-@keyframes fade-bg{
-	from {background-color: #171717 !important}
-	to {background-color: black;}
-}
 .logo {
 	height: 50px;
 	width: 50px;
@@ -35,39 +31,23 @@ nav .navbar-nav li a{
  }
  .trial-button{
  	background-image: linear-gradient(to right, #1fffb1 , #44ffef,#1d70ff,#893aff);
-  	/*background-color: #038EE5;*/
  }
   .login-button{
   	background-color: #7D06E3;
  }
- .whatis-button{
- 	font-family: 'Open Sans';
- 	font-size: 17px !important;
-  	background-color: #c83dff;
-  	color: white;
- 	padding: 10px 25px;
- 	margin-left: 100px;
- 	border-radius: 30px;
- 	text-decoration: none !important;
- }
- .whatis-button:hover{
- 	color: white;
- }
+ /*
  hr{
  	margin-top: 0px !important;
  	margin-bottom: 5px !important;
  	background-color: #4f4d4c !important;
  }
+ */
  h5{
  	margin-top: 40px !important;
  	margin-bottom: 20px !important;
  	color: #9D9D9D !important;
  	font-family: 'Open Sans' !important;
  	font-size: 15px !important;
- }
- .musician{	 	
- 	width: 350px;
- 	height: 350px;
  }
  div.div-header{
  	display: flex;
@@ -94,14 +74,11 @@ nav .navbar-nav li a{
  	font-family: 'Archivo Black' !important;
  }
  #ac1, #ac2, #ac3{
-
- 		padding: 20px;
+	padding: 20px;
  	padding-top: 0px !important;
  	padding-bottom: 0px !important;
  }
-
  #ac1{
- 	 
  	color: #171717;
  	text-shadow: -1px 0 #D64141, 0 1px #D64141, 1px 0 #D64141, 0 -1px #D64141;
  }
@@ -119,7 +96,6 @@ nav .navbar-nav li a{
   	padding: 0px !important;
  	color: #171717;
  	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
- 	/*text-shadow: 0 0 2px #FFFFFF !important;*/
  }
  #g6{
  	margin-bottom: 20px !important;
@@ -148,12 +124,6 @@ nav .navbar-nav li a{
  	max-width: 100%;
  	min-height: 100%;
  }
- /*
-.genres h1:hover{
- 	color: white !important;
- 	text-shadow: 0 0 3px white !important;
- 	
- }*/
 
 
 
