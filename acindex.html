@@ -21,7 +21,6 @@
     
   </head>
   <body>
-    <!--style="background-color: #171717 !important"-->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="logo" src="logo.png"></a>
@@ -66,17 +65,11 @@
           <a class="browse-all-btn" href="index.html">BROWSE ALL</a>
           <h5>Connecting musicians with businesses,<br>and sharing music with the world.</h5>
           <a class="learn-more-btn" href="index.html">Learn more</a>
-
-
-          <!--
-          <h5>ArtConnect connects part-time, professional, and amateur musicians<br>
-            with business and private venues<br><br></h5>
-          <a class="whatis-button" href="index.html">What is ArtConnect</a>
-          -->
         </div>
         <script>
           $(".g").hover(function(){
             var idName = $(this).attr('id');
+            //set background img based on which genre the user is hovering
             if (idName=="g1"){
               $("div.genres").css("background-image","url(\"guitar.png\")");
             } else if (idName=="g2"){
@@ -87,35 +80,41 @@
               $("div.genres").css("background-image","url(\"microphone.png\")");
             } else if (idName=="g6"){
               $("div.genres").css("background-image","url(\"piano.png\")");
-            } else {
-              $("div.genres").css("background-image","url(\"guitar.png\")");
             }
             
           
-            
+            //set all h1s including the "ARTCONNECT" h1s' color to black
             $("h1").css("color","black");
-            $("#g1").css("text-shadow","-1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626");
-            $("#g2").css("text-shadow","-1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626");
-            $("#g4").css("text-shadow","-1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626");
-            $("#g5").css("text-shadow","-1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626");
-            $("#g6").css("text-shadow","-1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626");
+
+            //set the border color of the other genres to a darker grey
+            var genres = [$("#g1"),$("#g2"),$("#g4"),$("#g5"),$("#g6")];
+            for (i=0;i<genres.length;i++){
+              genres[i].css("text-shadow","-1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626");
+            }
 
             $(this).css({"color":"white","text-shadow":"0 0 6px white"});
+
             $("body").attr('style','background-color: black !important');
             $("html").attr('style','background-color: black !important');
             
           },
           function(){
-            $( "div.genres" ).fadeIn('fast');
+            //$( "div.genres" ).fadeIn('fast');
+
+            //set back old h1 color
             $("h1").css("color","#171717");
-            $("#g1").css("text-shadow","-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white");
-            $("#g2").css("text-shadow","-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white");
-            $("#g4").css("text-shadow","-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white");
-            $("#g5").css("text-shadow","-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white");
-            $("#g6").css("text-shadow","-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white");
+
+            var genres = [$("#g1"),$("#g2"),$("#g4"),$("#g5"),$("#g6")];
+            //set border color back to white for the genre h1s
+            for (i=0;i<genres.length;i++){
+              genres[i].css("text-shadow","-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white");
+            }
+
             $(this).css({"color":"#171717","text-shadow":"-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"});
+
             $("body").attr('style','background-color: #171717 !important');
             $("html").attr('style','background-color: #171717 !important');
+
             $("div.genres").css("background-image","none");
           });
         
