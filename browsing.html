@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!--my css-->
+    <link rel="stylesheet" href="browsestyle.css">
+
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <!--FONTS-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    
+      <title>ArtConnect</title>
+      <link rel="icon" type="image/png" href="logo.png">
+
+      <!--for jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="acindex.html"><img class="logo" src="logo.png"></a>
+            <a class="navbar-brand" href="acindex.html"><img class="logo-text" src="logotext.png"></a>
+            <a class="navbar-brand trial-button" href="acindex.html">START FREE TRIAL TODAY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul id="nav-ul" class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="acindex.html">BROWSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acindex.html">SIGNUP</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand login-button" href="acindex.html" style="color: white !important;">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+        <!--
+        <div class="artist-venue">
+          <h1 class="venue-h1">VENUE</h1>
+          <h1 class="artist-h1">ARTIST</h1>
+
+        </div>-->
+        <div class="search">
+          <!--<h2>Browse</h2>-->
+          <h1>Browse</h1>
+          <input type="text" placeholder="Search by location or venue name..">
+          <button class="submit-btn"type="submit">Submit</button>
+             
+        </div>
+        <div style="display: flex; margin-top: 20px !important;">
+          <div class="filters">
+          <button class="col-btn collapsible">📍 Location +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+
+          </div>
+          <button class="col-btn collapsible">📅 Date  +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+
+          </div>
+          <button class="col-btn collapsible">⌚ Time  +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+
+          </div>
+          <button class="col-btn collapsible">🎧 Genre  +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+
+          </div>
+          <button class="col-btn collapsible">🎸 Instruments  +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+          </div>
+
+          <button class="col-btn collapsible">💰 Pay  +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+          </div>
+
+          <button class="col-btn collapsible">👧 Capacity  +</button>
+          <div class="content">
+            <p>Rock</p>
+            <p>Jazz</p>
+            <p>Classical</p>
+            <p>Soul</p>
+            <p>Country</p>
+          </div>
+
+        </div>
+          <div class="results">
+          <div>
+            <a style="color: black !important; text-decoration: underline !important; padding-left: 40px !important; padding-right: 5px !important" href="#">Venues</a>
+            <a style="color: black !important; padding-right: 5px !important; padding-left: 5px !important;" href="#">Artists</a>
+          </div>
+          <div class="result-row">
+          <div id="c1" class="card result" style="width:500px; border: none !important;">
+            <img class="card-img-top card-img" style=" filter: brightness(50%);  height: 100px !important;" src="venue.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="card-title">The Fling</h3>
+              <h5 class="genre">Rock · Pop · Classic · Jazz</h5>
+            </div>
+            <div class="result-info">
+              <ul>
+              <li class="location">📍 2370 N Tustuin Ave, Ste D, Sanata Ana, CA</li>
+              <li class="capacity">👧 60-100 seats</li>
+              <li>📅 Friday, Saturday, and Sundays</li>
+              <li class="pay">💰 {10%}-{15%)</li>
+              <li>✉️ Contact</li>
+            </ul>
+            </div>
+
+
+          </div>
+
+          <div id="c2" class="card result" style="width:500px; border: none !important;">
+            <img class="card-img-top card-img" style="filter: brightness(50%);  height: 100px !important;" src="venue.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="card-title">The Fling</h3>
+              <h5>Rock · Pop · Classic · Jazz</h5>
+            </div>
+            <div class="result-info">
+              <ul>
+              <li class="location">📍 2370 N Tustuin Ave, Ste D, Sanata Ana, CA</li>
+              <li class="capacity">👧 60-100 seats</li>
+              <li>📅 Friday, Saturday, and Sundays</li>
+              <li class="pay">💰 {10%}-{15%)</li>
+              <li>✉️ Contact</li>
+            </ul>
+            </div>
+
+            
+          </div>
+
+          <div id="c3" class="card result" style="width:500px; border: none !important;">
+            <img class="card-img-top card-img" style="filter: brightness(50%);  height: 100px !important;" src="venue.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="card-title">The Fling</h3>
+              <h5>Rock · Pop · Classic · Jazz</h5>
+            </div>
+            <div class="result-info">
+              <ul>
+              <li class="location">📍 2370 N Tustuin Ave, Ste D, Sanata Ana, CA</li>
+              <li class="capacity">👧 60-100 seats</li>
+              <li>📅 Friday, Saturday, and Sundays</li>
+              <li class="pay">💰 {10%}-{15%)</li>
+              <li>✉️ Contact</li>
+            </ul>
+            </div>
+
+            
+          </div>
+        </div>
+          <div class="result-row">
+          <div id="c4" class="card result" style="width:500px; border: none !important;">
+            <img class="card-img-top card-img" style="filter: brightness(50%);  height: 100px !important;" src="venue.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="card-title">The Fling</h3>
+              <h5>Rock · Pop · Classic · Jazz</h5>
+            </div>
+            <div class="result-info">
+              <ul>
+              <li class="location">📍 2370 N Tustuin Ave, Ste D, Sanata Ana, CA</li>
+              <li class="capacity">👧 60-100 seats</li>
+              <li>📅 Friday, Saturday, and Sundays</li>
+              <li class="pay">💰 {10%}-{15%)</li>
+              <li>✉️ Contact</li>
+            </ul>
+            </div>
+
+
+          </div>
+
+          <div id="c5" class="card result" style="width:500px; border: none !important;">
+            <img class="card-img-top card-img" style="filter: brightness(50%);  height: 100px !important;" src="venue.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="card-title">The Fling</h3>
+              <h5>Rock · Pop · Classic · Jazz</h5>
+            </div>
+            <div class="result-info">
+              <ul>
+              <li class="location">📍 2370 N Tustuin Ave, Ste D, Sanata Ana, CA</li>
+              <li class="capacity">👧 60-100 seats</li>
+              <li>📅 Friday, Saturday, and Sundays</li>
+              <li class="pay">💰 {10%}-{15%)</li>
+              <li>✉️ Contact</li>
+            </ul>
+            </div>
+
+            
+          </div>
+
+          <div id="c6" class="card result" style="width:500px; border: none !important;">
+            <img class="card-img-top card-img" style="filter: brightness(50%);  height: 100px !important;" src="venue.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="card-title">The Fling</h3>
+              <h5 class="genre">Rock · Pop · Classic · Jazz</h5>
+            </div>
+            <div class="result-info">
+              <ul>
+              <li class="location">📍 2370 N Tustuin Ave, Ste D, Sanata Ana, CA</li>
+              <li class="capacity">👧 60-100 seats</li>
+              <li>📅 Friday, Saturday, and Sundays</li>
+              <li class="pay">💰 {10%}-{15%)</li>
+              <li>✉️ Contact</li>
+            </ul>
+            </div>
+
+            
+          </div>
+        </div>
+        </div>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li style="padding-left: 0 !important;"class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li style="padding-left: 0 !important;"class="page-item"><a class="page-link" href="#">1</a></li>
+            <li style="padding-left: 0 !important;"class="page-item"><a class="page-link" href="#">2</a></li>
+            <li style="padding-left: 0 !important;"class="page-item"><a class="page-link" href="#">3</a></li>
+            <li style="padding-left: 0 !important;"class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        <script>
+          var cards = [$('#c1'),$('#c2'),$('#c3'),$('#c4'),$('#c5'),$('#c6')];
+      var numOfRows;
+      
+      //get number of venues in database table
+      $.ajax({
+          type: "POST",
+          url: "function_manager.php",
+          data: {functionname: 'getRowsInTable'},
+          async: false,
+        }).done(function (data) {
+        numOfRows = data;
+        });
+      var result = "";
+      
+      //call php function to get corresponding table data (based off venue id, and field i.e. genre,name, etc.)
+      //value of field id can be found in getField
+      function getResult(venueId,fieldId){
+        $.ajax({
+          type: "POST",
+          url: "function_manager.php",
+          data: {functionname: 'getResult', arguments: [venueId,fieldId]},
+          async: false,
+        }).done(function (data) {
+        result = data;
+        });
+      }
+      
+      //set each panel based off venues in the venues table
+          for (i =0;i< numOfRows;i++){
+        //set the name (title)
+      getResult(i+1,1);
+      $(cards[i]).find('.card-title').text(result);
+        
+      //set genre
+      getResult(i+1,2);
+      $(cards[i]).find('h5').text(result);
+
+      //set locations
+      getResult(i+1,3);
+      $(cards[i]).find('.location').text("📍 "+result);
+      
+      //set capacity range
+      getResult(i+1,4);
+      temp = result;
+      getResult(i+1,5);
+      $(cards[i]).find('.capacity').text("👧 "+temp+"-"+result);
+
+      //set commision/pay
+      getResult(i+1,6);
+      $(cards[i]).find('.pay').text("💰 $"+result);
+
+      //change backround img
+      getResult(i+1,7);
+      $(cards[i]).children('.card-img').attr("src",result);
+          }
+      
+      //remove unused cards
+      if (numOfRows < 6){
+        for (i=numOfRows;i<cards.length;i++){
+          $(cards[i]).remove();
+        }
+      }
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+        </script>
+  </body>
+</html>
+
