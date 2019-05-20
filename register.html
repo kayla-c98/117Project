@@ -1,0 +1,66 @@
+<?php
+  include("config.php");
+  session_start();
+
+  if($_SERVER["REQUEST_METHOD"]=="POST") {
+    //NO SQL INJECTION!!! >:(
+    $venue_name = mysqli_real_escape_string($db,$_POST['name']);
+    $genre = mysqli_real_escape_string($db,$_POST['genre']);
+    $location = mysqli_real_escape_string($db,$_POST['location']);
+    $capacity = mysqli_real_escape_string($db,$_POST['capacity']);
+    $pay = mysqli_real_escape_string($db,$_POST['pay']);
+
+    mysqli_query($db,"INSERT INTO venues (name,genre,location,min_capacity,max_capacity,pay) VALUES ('$venue_name','$genre','$location',0,'$capacity','$pay')");
+?>
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+
+	  <!--my css-->
+	  <link rel="stylesheet" href="register.css">
+
+      <!-- Bootstrap CSS -->
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+
+      <!--FONTS-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    
+      <title>ArtConnect</title>
+      <link rel="icon" type="image/png" href="logo.png">
+
+      <!--for jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container">  
+		  <form id="contact" action="" method="post">
+		    <h3>Venue Registration Form</h3>
+		    <h4>Enter details about the gig</h4>
+		    <fieldset>
+		      <input name="name" placeholder="Your venue's name" type="text" tabindex="1" required autofocus>
+		    </fieldset>
+		    <fieldset>
+		      <input name="genre" placeholder="Genres you're looking for" type="text" tabindex="2" required>
+		    </fieldset>
+		    <fieldset>
+		      <input name="location" placeholder="Your city" type="text" tabindex="3" required>
+		    </fieldset>
+		    <fieldset>
+		      <input name="capacity" placeholder="Venue capacity" type="text" tabindex="4" required>
+		    </fieldset>
+		    <fieldset>
+		      <input name="pay" placeholder="Commission" type="text" tabindex="4" required>
+		    </fieldset>
+		    <fieldset>
+			    <label for="exampleFormControlFile1" style="display: block">Upload venue img</label>
+	    		<input type="file" class="form-control-file" id="exampleFormControlFile1">
+	    	</fieldset>
+		    <fieldset>
+		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+		    </fieldset>
+		  </form>
+		</div>
+	</body>
+</html>
