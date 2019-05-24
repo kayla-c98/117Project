@@ -1,0 +1,16 @@
+.test1 button{
+    color: white;
+    border-radius: 100em;
+    padding: 0.7em 1.3em;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(-90deg, #BC00FF, #00AAFB, #00E88F);
+    border: none;
+
+}
+
+
+body{
+    background-color: white;
+}
