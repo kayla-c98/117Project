@@ -30,7 +30,7 @@ body{
     top: 50%;
     left: 50%;
 
-    width: 400px; 
+    width: 40%; 
     line-height: 3em;
     background-color: white;
     border-radius: 25px;
@@ -41,7 +41,7 @@ body{
 }
 
 .accountTypeSelection{
-    font-family: 'Archivo Black';
+    font-family: 'Archivo';
     font-size: 1.8em;
     margin-bottom: 0.5em;
     text-align: center;
@@ -51,15 +51,23 @@ body{
     line-height: 4em;   
     border: 0px green solid; 
     text-align: right;
-    margin-right: 2em;
+    padding-right: 10px;
+}
+.textFields label{
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
 }
 
 .textFields input{
     border: 1.4px rgb(201, 201, 201) solid;
     border-radius: 10px;
-    padding: 14px 50px;
+    width: 60%;
+    height: 50px;
+    padding: 10px;
     margin-left: 0.6em;
     font-size: 1em; 
+    box-sizing: border-box;
 }
 
 .submitButtons{
@@ -80,6 +88,13 @@ body{
     border-radius: 100em;
     font-weight: bold;
     color: white;
+}
+
+#signUp:hover{
+    background-color: #008C7B;
+    /*    border-radius: 100em;
+    font-weight: bold;
+    color: white; */
 
 }
 
@@ -87,6 +102,9 @@ body{
     color: grey;
 }
 
+#login:hover{
+    color: black;
+}
 
 
 
