@@ -30,8 +30,8 @@ body{
     top: 50%;
     left: 50%;
 
-    width: 40%; 
-    line-height: 3em;
+    width: 300px; 
+    line-height: 4em;
     background-color: white;
     border-radius: 25px;
     padding: 2em 3em;
@@ -48,21 +48,21 @@ body{
  }
 
 .textFields{
-    line-height: 4em;   
+    line-height: 4.2em;   
     border: 0px green solid; 
     text-align: right;
-    padding-right: 10px;
+    padding: 0px;
 }
 .textFields label{
     float: left;
-    width: 40%;
+    width: 30%;
     box-sizing: border-box;
 }
 
 .textFields input{
     border: 1.4px rgb(201, 201, 201) solid;
     border-radius: 10px;
-    width: 60%;
+    width: 70%;
     height: 50px;
     padding: 10px;
     margin-left: 0.6em;
@@ -79,18 +79,17 @@ body{
 
 .submitButtons input{
     font-size: 1em;
-    padding: 14px 30px;
     border: none;
 }
 
-#signUp{
+#login{
     background-color: #00E88F;
     border-radius: 100em;
     font-weight: bold;
     color: white;
 }
 
-#signUp:hover{
+#login:hover{
     background-color: #008C7B;
     /*    border-radius: 100em;
     font-weight: bold;
@@ -98,11 +97,12 @@ body{
 
 }
 
-#login{
+#signUp{
     color: grey;
+    width: auto;
 }
 
-#login:hover{
+#signUp:hover{
     color: black;
 }
 
