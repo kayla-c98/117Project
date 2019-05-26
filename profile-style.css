@@ -1,14 +1,9 @@
 body,html{
-	/*background: #FFFFFF !important;*/
-	background: #171717 !important;
-}
-.logo {
-	height: 50px;
-	width: 50px;
+	background: white !important;
 }
 .logo-text{
 	height: 40px;
-	width: 75px;
+	width: 100px;
 }
 a{
 	text-decoration: none !important;
@@ -17,7 +12,7 @@ nav{
 	padding: 10px 30px 0px 30px !important;
 }
 nav .navbar-nav li a{
-	color: white !important;
+	color: black !important;
 	font-family: 'Open Sans';
 	font-size: 15px;
  }
@@ -75,7 +70,7 @@ div.artist-panel p{
 h1{
 	font-family: 'Archivo Black' !important;
 	margin: 30px 40px 30px 40px !important;
-	color: white !important;
+	color: #212121 !important;
 }
 
 div.artist-info{
@@ -90,10 +85,13 @@ div.artist-info{
 
 div.artist-info h2{
 	font-size: 24px;
+	color: #BDBDBD !important;
 }
 
 div.artist-info p{
 	font-family: 'Abhaya Libre ExtraBold' !important;
+	/*font-size: 44px;*/
+	color: #212121 !important;
 }
 
 
