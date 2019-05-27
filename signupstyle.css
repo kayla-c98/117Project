@@ -1,8 +1,17 @@
-h1{
+input:focus { outline: none; }
+button:focus { outline: none; }
+
+button:hover{
+    cursor: pointer;
+}
+
+ 
+ h1{
     text-align: left;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 60px;
     font-family: 'Archivo Black';
-    font-size: 40px;
+    font-size: 36px;
     line-height: 40px;
 }
 
@@ -10,6 +19,8 @@ body, html{
     height: 100%;
     margin: 0;
 }
+
+
 
 .bgImage{
     background-image: url("https://images.unsplash.com/photo-1554283508-acb4d08a7717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"); 
@@ -21,41 +32,79 @@ body, html{
 }
 
 header{
+    align-content: center;
     position: absolute;
     width: 100%;
+    padding-bottom: 10px;
     border: 0px red solid;
-    background-color: black;
+    display: inline-block;
+
+    
 }
 
 header .logo{ 
     float: left;
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    margin-left: 60px;
+    height: 60px;
 }
 
-header #signUpNav{
-    width: 40%;
-    padding: 6px 10px;
-    border: 3px blue solid;
-    float: right;
-    display: inline;
+header .logo:hover{ 
+    cursor: pointer;
 }
 
-header .logo img{
-    width: 150px;
+header button{
+    color: white;
+    border-radius: 100em;
+    padding: 0.7em 1.3em;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(-90deg, #BC00FF, #00AAFB, #00E88F);
+    border: none;
 }
 
-header #signUpNav li{
-    display: inline;
+header .trialButton{
+    position: relative;
+    float: left;
+    border: 0px red solid;
+    height:46px;
+
+    margin-top: 17px;
 }
 
-header #signUpNav a{
-    height: 10px;
+header a{
     color: white;
     text-decoration: none;
     font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 30px;
 }
+
+header nav{
+    margin-top: 32px;
+    margin-right: 40px;
+    float: right;
+    border: 0px red solid;
+}
+
+header img{
+    width: 150px;
+    margin-right: 20px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
 
 .container{
     /*center*/
@@ -66,12 +115,17 @@ header #signUpNav a{
     left: 50%;
 
     width: 50%; 
-    max-width: 500px;
-    min-width: 340px;
-    background-color: white;
+    max-width: 520px;
+    min-width: 380px;
+    background-image: #FAFAFA;
     border-radius: 30px;
-    padding: 20px 40px;
-    box-shadow: 0px 14px 60px grey;
+    padding: 10px 40px;
+    background-image:  url(./img/groovy.png), linear-gradient(-0deg, #ffffff, #FAFAFA);
+    background-position-x: 90%, center;
+    background-position-y: 10%, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 150px, auto;
+    box-shadow: 0px 10px 40px #424242;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1em;
 }
@@ -92,7 +146,7 @@ header #signUpNav a{
      appearance: none;
      display: inline-block;
      position: relative;
-     background-color: #f1f1f1;
+     background-color: rgb(230, 230, 230);
      color: #666;
      top: 10px;
      height: 30px;
@@ -106,9 +160,10 @@ header #signUpNav a{
 }
 .form-radio:checked::before{
      position: absolute;
+     font-size: 1.6em;
      font-family: 'Open Sans', Arial, sans-serif;
-     left: 8px;
-     top: 6px;
+     left: 7px;
+     top: 5px;
      content: '✓';
      transform: rotate(0deg);
      color: black;
@@ -116,7 +171,7 @@ header #signUpNav a{
 }
 
 .form-radio:hover{
-     background-color: #f7f7f7;
+     background-color: #BDBDBD;
 }
 
 .form-radio:checked{
@@ -136,7 +191,7 @@ label{
 
 
 .textFields{
-    line-height: 4em;   
+    line-height: 3.5em;   
     border: 0px green solid; 
     text-align: right;
     padding-right: 0px;
@@ -148,7 +203,7 @@ label{
 
 .textFields input{
     border: 1.4px rgb(201, 201, 201) solid;
-    border-radius: 6px;
+    border-radius: 100px;
     width: 60%;
     height: 26px;
     padding: 0.5em 1em;
@@ -160,7 +215,7 @@ label{
 
 .submitButtons{
     margin-top: 2em;
-    margin-bottom: 1.4em;
+    margin-bottom: 1.6em;
     border: 0px green solid;
     text-align: center;
     font-size: 1em;
@@ -176,6 +231,7 @@ label{
     color: white;
     border-radius: 100em;
     padding: 0.7em 1.3em;
+    width: 130px;
     font-size: 1.1em;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: bold;
@@ -185,6 +241,7 @@ label{
 
 #login:hover{
     background-color: #008C7B;
+    cursor: pointer;
     /*    border-radius: 100em;
     font-weight: bold;
     color: white; */
@@ -193,11 +250,12 @@ label{
 
 #signUp{
     color: grey;
-    background-color: white;
+    background-color: Transparent;
 }
 
 #signUp:hover{
     color: black;
+    cursor: pointer;
 }
 
 
