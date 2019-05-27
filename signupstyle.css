@@ -1,8 +1,17 @@
-h1{
+input:focus { outline: none; }
+button:focus { outline: none; }
+
+button:hover{
+    cursor: pointer;
+}
+
+
+ h1{
     text-align: left;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 60px;
     font-family: 'Archivo Black';
-    font-size: 40px;
+    font-size: 36px;
     line-height: 40px;
 }
 
@@ -11,8 +20,10 @@ body, html{
     margin: 0;
 }
 
+
+
 .bgImage{
-    background-image: url("https://images.unsplash.com/photo-1554283508-acb4d08a7717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"); 
+    background-image: url("https://images.unsplash.com/photo-1554283508-acb4d08a7717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
     height: 100%;
     min-height: 600px;
     background-position: center;
@@ -20,16 +31,81 @@ body, html{
     background-size: cover;
 }
 
-.signUpNav{
-    /* logo w/ text - white */
+header{
+    align-content: center;
     position: absolute;
+    width: 100%;
+    padding-bottom: 10px;
+    border: 0px red solid;
+    display: inline-block;
+
+
 }
 
-.signUpNav img{
-    width: 150px;
-    margin-top: 4%;
-    margin-left: 10%;
+header .logo{
+    float: left;
+    margin-top: 12px;
+    margin-left: 60px;
+    height: 60px;
 }
+
+header .logo:hover{
+    cursor: pointer;
+}
+
+header button{
+    color: white;
+    border-radius: 100em;
+    padding: 0.7em 1.3em;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(-90deg, #BC00FF, #00AAFB, #00E88F);
+    border: none;
+}
+
+header .trialButton{
+    position: relative;
+    float: left;
+    border: 0px red solid;
+    height:46px;
+
+    margin-top: 17px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+header nav{
+    margin-top: 32px;
+    margin-right: 40px;
+    float: right;
+    border: 0px red solid;
+}
+
+header img{
+    width: 150px;
+    margin-right: 20px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
+
 .container{
     /*center*/
     -webkit-transform: translate(-50%,-50%);
@@ -38,58 +114,108 @@ body, html{
     top: 52%;
     left: 50%;
 
-    width: 50%; 
-    max-width: 500px;
-    min-width: 340px;
-    line-height: 4em;
-    background-color: white;
+    width: 50%;
+    max-width: 520px;
+    min-width: 380px;
+    background-image: #FAFAFA;
     border-radius: 30px;
-    padding: 20px 40px;
-    box-shadow: 0px 14px 60px grey;
-    font-family: 'Open Sans', sans-serif !important;
+    padding: 10px 40px;
+    background-image:  url(./img/groovy.png), linear-gradient(-0deg, #ffffff, #FAFAFA);
+    background-position-x: 90%, center;
+    background-position-y: 10%, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 150px, auto;
+    box-shadow: 0px 10px 40px #424242;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1em;
 }
 
-input[type="radio"]{
-    /*
-    visibility:hidden;
-    */
-}
 
 .accountTypeSelection{
-    font-family: 'Archivo Black';
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
+    font-family: 'Archivo Black', ;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     white-space:nowrap;
- }
+}
+
+ .form-radio{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: rgb(230, 230, 230);
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     margin-right: 6px;
+     margin-left: 2em;
+     outline: none;
+     cursor: pointer;
+}
+.form-radio:checked::before{
+     position: absolute;
+     font-size: 1.6em;
+     font-family: 'Open Sans', Arial, sans-serif;
+     left: 7px;
+     top: 5px;
+     content: '✓';
+     transform: rotate(0deg);
+     color: black;
+     opacity: 0.5;
+}
+
+.form-radio:hover{
+     background-color: #BDBDBD;
+}
+
+.form-radio:checked{
+     background-color: #00E88F;
+}
+
+label{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+     color: #333;
+     /*
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     */
+}
+
+
 
 .textFields{
-    line-height: 4.2em;   
-    border: 0px green solid; 
+    line-height: 3.5em;
+    border: 0px green solid;
     text-align: right;
-    padding: 0px;
-    white-space:nowrap;
+    padding-right: 0px;
+    white-space: nowrap;
+    margin-left: 6%;
+    margin-right: 16%;
 }
-.textFields label{
-    float: left;
-    width: 26%;
-    box-sizing: border-box;
-}
+
 
 .textFields input{
     border: 1.4px rgb(201, 201, 201) solid;
-    border-radius: 10px;
-    width: 74%;
-    height: 50px;
+    border-radius: 100px;
+    width: 60%;
+    height: 26px;
     padding: 0.5em 1em;
-    font-size: 1em; 
-    margin: 0px 8px;
-    box-sizing: border-box;
+    font-size: 1em;
+    margin-left: 10px;
+    /*margin: 0px 8px;*/
+
 }
 
 .submitButtons{
     margin-top: 2em;
+    margin-bottom: 1.6em;
     border: 0px green solid;
     text-align: center;
     font-size: 1em;
@@ -105,8 +231,9 @@ input[type="radio"]{
     color: white;
     border-radius: 100em;
     padding: 0.7em 1.3em;
+    width: 130px;
     font-size: 1.1em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-weight: bold;
     background-color:#00E88F;
     border: none;
@@ -114,6 +241,7 @@ input[type="radio"]{
 
 #login:hover{
     background-color: #008C7B;
+    cursor: pointer;
     /*    border-radius: 100em;
     font-weight: bold;
     color: white; */
@@ -122,12 +250,10 @@ input[type="radio"]{
 
 #signUp{
     color: grey;
-    background-color: white;
+    background-color: Transparent;
 }
 
 #signUp:hover{
     color: black;
+    cursor: pointer;
 }
-
-
-

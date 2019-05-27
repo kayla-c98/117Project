@@ -9,43 +9,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign up for ArtConnect</title>
     <link rel="stylesheet" href="signupstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="./img/text - white.png" alt="">
+        </div>
 
-    <nav class="signUpNav">
-        <img src="./img/text - white.png" alt="">
-    </nav>
+        <div class="trialButton">
+            <button>Start your free trial</button>
+        </div>
 
+        <nav>
+            <ul>
+                <a href="">Stage</a></li>
+                <a href="">Browse</a></li>
+                <a href="">Dashboard</a></li>
+                <a href="">Profile</a></li>
+            </ul>
+         </nav>
+    </header>
     <div class="bgImage"></div>
-    
+
     <div class="container">
         <div class="loginIntro">
-            <h1>Hello, <br> fellow music lovers</h1> 
+            <h1>Hello, <br> fellow music lover</h1>
         </div>
+
         <div class="accountTypeSelection">
-            <input type = "radio" id="artistSelection" name="submit" value="Artist"> Artist
-            <input type = "radio" id="venueSelection" name="submit" value="Venue"> Venue
+            <input type="radio" name="radio" value="venue" id="radio-venue" class="form-radio"><label for="radio-one">Venue</label>
+            <input type="radio" name="radio" value="artist" id="radio-artist" class="form-radio"><label for="radio-one">Artist</label>
         </div>
 
         <div class="textFields">
             <form action="" method="POST"
-                <label>Email</label>
+                <label class="accountLabel">Email</label>
                 <input type = "email" id="email">
             </form>
             <form action="" method="POST"
-                <label>Password</label>
+                <label class="accountLabel">Password</label>
                 <input type = "password" id="password">
             </form>
         </div>
 
         <div class="submitButtons">
-            <input type = "submit" id="signUp" name="submit" value="Sign Up"> 
+            <input type = "submit" id="signUp" name="submit" value="Sign Up">
             <input type = "submit" id="login" name="submit" value="Log In">
         </div>
     </div>
-    
+
 </body>
 
 </html>
