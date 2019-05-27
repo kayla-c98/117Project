@@ -20,16 +20,43 @@ body, html{
     background-size: cover;
 }
 
-.signUpNav{
-    /* logo w/ text - white */
+header{
     position: absolute;
+    width: 100%;
+    border: 0px red solid;
+    background-color: black;
 }
 
-.signUpNav img{
-    width: 150px;
-    margin-top: 4%;
-    margin-left: 10%;
+header .logo{ 
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
+
+header #signUpNav{
+    width: 40%;
+    padding: 6px 10px;
+    border: 3px blue solid;
+    float: right;
+    display: inline;
+}
+
+header .logo img{
+    width: 150px;
+}
+
+header #signUpNav li{
+    display: inline;
+}
+
+header #signUpNav a{
+    height: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container{
     /*center*/
     -webkit-transform: translate(-50%,-50%);
@@ -45,13 +72,13 @@ body, html{
     border-radius: 30px;
     padding: 20px 40px;
     box-shadow: 0px 14px 60px grey;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
 
 
 .accountTypeSelection{
-    font-family: 'Archivo Black';
+    font-family: 'Archivo Black', ;
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -80,10 +107,10 @@ body, html{
 .form-radio:checked::before{
      position: absolute;
      font: 16px 'Open Sans', sans-serif;
-     left: 10px;
-     top: 5px;
-     content: '\02143';
-     transform: rotate(40deg);
+     left: 8px;
+     top: 6px;
+     content: '✓';
+     transform: rotate(0deg);
      color: black;
      opacity: 0.5;
 }
