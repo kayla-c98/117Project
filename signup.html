@@ -14,7 +14,7 @@
 <body>
     
 
-    <nav class="signUpNav">
+    <nav class="signUpNav" >
         <img src="./img/text - white.png" alt="">
     </nav>
 
@@ -24,18 +24,19 @@
         <div class="loginIntro">
             <h1>Hello, <br> fellow music lovers</h1> 
         </div>
+        
         <div class="accountTypeSelection">
-            <input type = "radio" id="artistSelection" name="submit" value="Artist"> Artist
-            <input type = "radio" id="venueSelection" name="submit" value="Venue"> Venue
+            <input type="radio" name="radio" value="venue" id="radio-venue" class="form-radio"><label for="radio-one">Venue</label>
+            <input type="radio" name="radio" value="artist" id="radio-artist" class="form-radio"><label for="radio-one">Artist</label>
         </div>
 
         <div class="textFields">
             <form action="" method="POST"
-                <label>Email</label>
+                <label class="accountLabel">Email</label>
                 <input type = "email" id="email">
             </form>
             <form action="" method="POST"
-                <label>Password</label>
+                <label class="accountLabel">Password</label>
                 <input type = "password" id="password">
             </form>
         </div>

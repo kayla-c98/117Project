@@ -50,42 +50,88 @@ body, html{
     font-size: 1em;
 }
 
-input[type="radio"]{
-    /*
-    visibility:hidden;
-    */
-}
 
 .accountTypeSelection{
     font-family: 'Archivo Black';
-    font-size: 1.8em;
     margin-bottom: 0.5em;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     white-space:nowrap;
  }
 
+ .form-radio{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     margin-right: 6px;
+     margin-left: 2em;
+     outline: none;
+     cursor: pointer;     
+}
+.form-radio:checked::before{
+     position: absolute;
+     font: 16px 'Open Sans', sans-serif;
+     left: 10px;
+     top: 5px;
+     content: '\02143';
+     transform: rotate(40deg);
+     color: black;
+     opacity: 0.5;
+}
+.form-radio:hover{
+     background-color: #f7f7f7;
+}
+
+.form-radio:checked{
+     background-color: #00E88F;
+}
+
+label{
+     font: 1em 'Open Sans', sans-serif;
+     font-weight: bold;
+     color: #333;
+     /*
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     */
+}
+
+
+
 .textFields{
+    min-width: 260px;
     line-height: 4.2em;   
     border: 0px green solid; 
     text-align: right;
-    padding: 0px;
-    white-space:nowrap;
+    padding-right: 0px;
+    white-space: nowrap;
+    margin-left: 6%;
+    margin-right: 8%;
 }
-.textFields label{
-    float: left;
-    width: 26%;
-    box-sizing: border-box;
-}
+
+
 
 .textFields input{
     border: 1.4px rgb(201, 201, 201) solid;
     border-radius: 10px;
-    width: 74%;
-    height: 50px;
+    width: 60%;
+    max-width: 240px;
+    height: 30px;
     padding: 0.5em 1em;
     font-size: 1em; 
-    margin: 0px 8px;
-    box-sizing: border-box;
+    margin-left: 10px;
+    /*margin: 0px 8px;*/
+    
 }
 
 .submitButtons{
