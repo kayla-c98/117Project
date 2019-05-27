@@ -41,7 +41,6 @@ body, html{
     width: 50%; 
     max-width: 500px;
     min-width: 340px;
-    line-height: 4em;
     background-color: white;
     border-radius: 30px;
     padding: 20px 40px;
@@ -53,9 +52,9 @@ body, html{
 
 .accountTypeSelection{
     font-family: 'Archivo Black';
-    margin-bottom: 0.5em;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-bottom: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     white-space:nowrap;
  }
@@ -88,6 +87,7 @@ body, html{
      color: black;
      opacity: 0.5;
 }
+
 .form-radio:hover{
      background-color: #f7f7f7;
 }
@@ -109,24 +109,21 @@ label{
 
 
 .textFields{
-    min-width: 260px;
-    line-height: 4.2em;   
+    line-height: 4em;   
     border: 0px green solid; 
     text-align: right;
     padding-right: 0px;
     white-space: nowrap;
     margin-left: 6%;
-    margin-right: 8%;
+    margin-right: 16%;
 }
-
 
 
 .textFields input{
     border: 1.4px rgb(201, 201, 201) solid;
-    border-radius: 10px;
+    border-radius: 6px;
     width: 60%;
-    max-width: 240px;
-    height: 30px;
+    height: 26px;
     padding: 0.5em 1em;
     font-size: 1em; 
     margin-left: 10px;
@@ -136,6 +133,7 @@ label{
 
 .submitButtons{
     margin-top: 2em;
+    margin-bottom: 1.4em;
     border: 0px green solid;
     text-align: center;
     font-size: 1em;
