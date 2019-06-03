@@ -1,16 +1,91 @@
-.test1 button{
+button:focus { outline: none; }
+
+button:hover{
+    cursor: pointer;
+}
+.buttons button{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+}
+
+/*button as default is green*/
+.button{
     color: white;
     border-radius: 100em;
-    padding: 0.7em 1.3em;
+    padding: 0.6em 1.2em;
     font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    background-image: linear-gradient(-90deg, #BC00FF, #00AAFB, #00E88F);
+    background-color: #00E88F;
     border: none;
+}
+
+/*purple button*/
+.button.purple{
+    background-color: #BC00FF;
+}
+
+/*purple-green gradient button*/
+.button.gradient{
+    background-image: linear-gradient(-90deg, #BC00FF, #00AAFB, #00E88F);
+}
+
+.button.accept{
+    color: #00E88F;
+    background-color: white;
+    box-shadow: 0px 8px 14px rgba(51, 51, 51, 0.2);
+}
+
+.button.accept label{
+}
+
+.button.accept::before{
+    content: "check"; 
+    margin-right: 4px;
+    font-family: "Material Icons"; 
+}
+
+.venueCardContainer{
+
+    /*remember to delete this */
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    width: 380px;
+    height: 260px;
+    background-image: linear-gradient(-0deg, #FFA300, #FF6200);
+    border-radius: 20px;
+}
+
+.venueCardContainer h2{
+    
+    margin: 16px  16px 0 16px;
+    padding: 20px 0 0 0;
+
+    margin: 0;
+    padding: 0;
+    
+    border: 0px red solid;
+    font-family: 'Archivo Black';
+}
+
+.venueCardContainer h3{
+    /*
+    margin-left: 16px;
+    margin-top: 0px;
+    */
+    margin: 0;
+    padding: 0;
+    border: 0px blue solid;
+    font-family: 'Archivo Black';
 
 }
 
-
-body{
-    background-color: white;
+.venueCardContainer ul{
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Open Sana', Arial, sans-serif;
 }
