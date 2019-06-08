@@ -143,12 +143,12 @@ header li{
 }
 .form-radio:checked::before{
      position: absolute;
-     font-size: 1.6em;
-     font-family: 'Open Sans', Arial, sans-serif;
-     left: 7px;
-     top: 5px;
-     content: '✓';
-     transform: rotate(0deg);
+     font-size: 1.5em;
+     font-family: 'Open Sans', sans-serif;
+     left: 10px;
+     top: 3px;
+     content: '\02143';
+     transform: rotate(45deg);
      color: black;
      opacity: 0.5;
 }
